@@ -1,8 +1,12 @@
 import React from 'react'
 
+import '../../css/forTeampage.css'
+
 class TeamPage extends React.Component{
     render(){
-        return <h1>Hello, this is TeamPage</h1>
+        return <div id="mentorshipJumboWrapper">
+            <h1 id="mentorshipjumboHead">Mentorship</h1>
+        </div>
     }
 }
 

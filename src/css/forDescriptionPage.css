@@ -1,0 +1,15 @@
+#learningJumboWrapper {
+    height: calc(100vh - 80.563px);
+    width: 100%;
+    background-image: url("../assets/pics/course.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 25vh
+}
+
+#jumboHead {
+    font-size: 18rem;
+    text-align: center;
+    color: #fff;
+    background-color: #00000050;
+}

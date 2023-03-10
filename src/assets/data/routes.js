@@ -13,12 +13,12 @@ const routes = {
     WhyJoinUs: [{
         title: "Learning",
         img: descriptionPic,
-        route: "/Description",
+        route: "/Learning",
         teaser: "Our courses have helped countless individuals discover and amplify their talents to the world"
     }, {
         title: "Mentorship",
         img: teamPic,
-        route: "/Team",
+        route: "/Mentorship",
         teaser: "Network and build connections with highly successful neurodivergent members"
     }]
 }

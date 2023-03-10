@@ -1,0 +1,14 @@
+#mentorshipJumboWrapper {
+    height: calc(100vh - 80.563px);
+    width: 100%;
+    background-image: url("../assets/pics/peopleRow.jpg");
+    background-position: center;
+    padding-top: 25vh
+}
+
+#mentorshipjumboHead {
+    font-size: 18rem;
+    text-align: center;
+    color: #fff;
+    background-color: #00000030;
+}

@@ -1,8 +1,12 @@
 import React from 'react'
 
+import '../../css/forDescriptionPage.css'
+
 class DescriptionPage extends React.Component{
     render(){
-        return <h1>Hello, this is DescriptionPage</h1>
+        return <div id="learningJumboWrapper">
+            <h1 id="jumboHead">Learning</h1>
+        </div>
     }
 }
 

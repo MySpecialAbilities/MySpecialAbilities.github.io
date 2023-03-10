@@ -22,11 +22,11 @@ class Nav extends React.Component {
                         Home
                     </Menu.Item>
 
-                    <Menu.Item name='description' to="/Description" as={Link}>
+                    <Menu.Item name='description' to="/Learning" as={Link}>
                         Learning
                     </Menu.Item>
 
-                    <Menu.Item name='team' to="/Team" as={Link}>
+                    <Menu.Item name='team' to="/Mentorship" as={Link}>
                         Mentorship
                     </Menu.Item>
 
@@ -36,8 +36,8 @@ class Nav extends React.Component {
                     </Menu.Item>
                 </Menu>
                 <Route path = "/" exact={true} component={HomePage} />
-                <Route path = "/Description" exact={true} component={DescriptionPage} />
-                <Route path = "/Team" exact={true} component={TeamPage} />
+                <Route path = "/Learning" exact={true} component={DescriptionPage} />
+                <Route path = "/Mentorship" exact={true} component={TeamPage} />
                 <Route path = "/Collaborations" exact={true} component={CollaborationsPage} />
             </BrowserRouter>
         )
