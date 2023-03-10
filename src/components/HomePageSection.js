@@ -40,7 +40,7 @@ class HomePageSection extends React.Component {
                                     as={Link}
                                     name="learnAbout"
                                     className='reasonButton'
-                                    to='/Description'>Start Learning</Button>
+                                    to='/Learning'>Start Learning</Button>
                             </div>
                         </Grid.Column>
                     </Grid.Row>
@@ -57,7 +57,7 @@ class HomePageSection extends React.Component {
                                     as={Link}
                                     name="team"
                                     className='reasonButton'
-                                    to='/Team'>Start Connecting</Button>
+                                    to='/Mentorship'>Start Connecting</Button>
                             </div>
                         </Grid.Column>
                         <Grid.Column width={8}>
