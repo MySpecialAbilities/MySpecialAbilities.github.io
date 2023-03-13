@@ -52,3 +52,25 @@
     height: 8px;
     background-color: black;
 }
+
+@media (max-width: 768px) {
+    #logoWrapper{
+        width: 100%;
+    }
+    #jumboWrapper > h1{
+        font-size: 40px;
+        line-height: 36px;
+    }
+    #abilities{
+        font-size: 40px;
+    }
+    #needs {
+        font-size: 40px;
+    }
+    #crossLine {
+        width: 200px;
+        top: -64px;
+        left: 450px;
+    }
+}
+    

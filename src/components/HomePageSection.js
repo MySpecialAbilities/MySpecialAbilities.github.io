@@ -2,6 +2,7 @@ import React from "react"
 import { Card, Grid, Image, Button } from 'semantic-ui-react'
 import { Link } from "react-router-dom"
 import "../css/forHomePageSection.css"
+import {Responsive} from 'semantic-ui-react'
 
 class HomePageSection extends React.Component {
     constructor(props) {
@@ -69,6 +70,34 @@ class HomePageSection extends React.Component {
         })
     }
 
+    makeCardsMobile = (arr) => {
+        let count = 1
+        return arr.map(ele => {
+            count += 1
+            
+            return <Grid className="homePageHugeSession">
+                <Grid.Column>
+                    <Grid.Column width={8}>
+                        <Image src={ele.img} style={{ width: "800px" }} />
+                    </Grid.Column>
+                    <Grid.Column width={8}>
+                        <div className="wordWrapper">
+                            <h1>{ele.title}</h1>
+                            <p>{ele.teaser}</p>
+                            <Button
+                                // onClick={this.handleClick}
+                                as={Link}
+                                name="learnAbout"
+                                className='reasonButton'
+                                to='/Learning'>Start Learning</Button>
+                        </div>
+                    </Grid.Column>
+                </Grid.Column>
+            </Grid>
+            
+        })
+    }
+
     // makeCards = (arr) => {
     //     return arr.map(ele => {
     //         return <Tilt className="Tilt" style={{ width: "calc(100%)" }} options={{ reverse: true, max: 35, perspective: 1000, scale: 1, speed: 300, transition: true, axis: null, reset: true, easing: "cubic-bezier(.03,.98,.52,.99)", }}>
@@ -91,7 +120,13 @@ class HomePageSection extends React.Component {
         const processedName = this.handleName(name)
         // console.log(arr)
         return <div>
+            <Responsive minWidth={1024}>
             {this.makeCards(arr)}
+            </Responsive>
+            <Responsive maxWidth={1023}>
+            {this.makeCardsMobile(arr)}
+            </Responsive>
+           
         </div>
     }
 }
